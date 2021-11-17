@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "django-example-rels"
+version = "1.0.0"
+description = "Django Example Model Relation"
+authors = []
+
+[tool.poetry.dependencies]
+python = "3.10"
+Django = "3.2.9"
+djangorestframework = "3.12.4"
+psycopg2-binary = "2.9.2"
+ulid-py = "1.1.0"
+whitenoise = "5.3.0"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+mypy = "*"
+pylint = "*"
+pylint-django = "*"
+
+[tool.black]
+line-length = 120
+target-version = ['py310']
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.venv
+  | \.vscode
+)/
+'''
+
+[tool.isort]
+include_trailing_comma = true
+line_length = 120
+multi_line_output = 3
+
+[mypy]
+ignore_missing_imports = true
