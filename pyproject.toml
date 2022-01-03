@@ -5,10 +5,11 @@ description = "Django Example Model Relation"
 authors = []
 
 [tool.poetry.dependencies]
-python = "3.10"
-Django = "3.2.9"
+python = "3.10.1"
+Django = "4.0"
 djangorestframework = "3.12.4"
 psycopg2-binary = "2.9.2"
+pytz = "^2021.3"
 ulid-py = "1.1.0"
 whitenoise = "5.3.0"
 

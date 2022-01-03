@@ -1,6 +1,12 @@
 version: "3"
 
 services:
+  workspace:
+    container_name: ws
+    image: python:3.10-slim
+    volumes:
+      - .:/ws
+
   django:
     container_name: django
     build:
