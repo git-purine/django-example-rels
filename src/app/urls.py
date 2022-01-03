@@ -20,4 +20,5 @@ from django.conf import settings
 
 urlpatterns = [
     path("helloworld/", include("apps.helloworld.urls")),
+    path("rel/", include("apps.relation.urls")),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

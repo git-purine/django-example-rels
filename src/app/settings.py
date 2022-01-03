@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "rest_framework",
     # apps
     "apps.helloworld",
+    "apps.relation",
 ]
 
 MIDDLEWARE = [
