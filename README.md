@@ -1,1 +1,5 @@
-# django-example-rels
+# django-example
+
+## helloworld
+
+<./src/apps/helloworld>
